@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<div id="add-member-form">
+    <h2>Add New Member</h2>
+    <form id="memberForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="Link1">Link1:</label>
+        <input type="text" id="Link1">
+
+        <label for="Link2">Link2:</label>
+        <input type="text" id="Link2">
+
+        <label for="Link3">Link3:</label>
+        <input type="text" id="Link3">
+
+        <label for="Link4">Link4:</label>
+        <input type="text" id="Link4">
+
+        <label for="Link5">Link5:</label>
+        <input type="text" id="Link5">
+
+        <button type="submit">Add Member</button>
+    </form>
+</div>
+
+<script>
+    deocument.getElementById("memberForm").addEventListener("submit", function(event){
+        event.prevenDefault();
+
+        const name = document.getEventById("name").value;
+        const Link1 = document.getElementById("Link1").value;
+        const Link2 = document.getElementById("Link2").value;
+        const Link3 = document.getElementById("Link3").value;
+        const Link4 = document.getElementById("Link4").value;
+        const Link5 = document.getElementById("Link5").value;
+
+        // main.jsに登録したaddmember関数
+        addmember(name, Link1, Link2, link3, Link4, Link5);
+
+        //動作結果を表示
+        alert("Member Added!");
+    });
+</script>

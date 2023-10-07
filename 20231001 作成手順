@@ -1,0 +1,17 @@
+・作業手順
+１．インストール
+２．データベース設計←20231010
+        id INTEGER PRIMARY KEY,
+        name TEXT NOT NULL,
+        Link1 TEXT,
+        Link2 TEXT,
+        Link3 TEXT,
+        Link4 TEXT,
+        Link5 TEXT
+３．データベースに情報を入力するモデル作成
+４．コントローラー作成
+５．ビュー（index.html）か、それを操作するjsに組み込む
+６．表示箇所
+７．編集機能
+８．削除機能
+９．一覧表示

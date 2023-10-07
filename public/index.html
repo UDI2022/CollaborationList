@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Collaboration List</title>
+    </head>
+    <body>
+        <!--コラボ配信者追加コンポーネントの読み込み-->
+        <div id="componentContainer"></div>
+
+        <script>
+            const fs = require('fs');
+            const path = require('path');
+
+            function loadConponent(componentName) {
+                const componentPath = path.join(__dirname, 'components'+ '.html');
+                const componentContent = fs.readFileSync(componentPath, 'utf-8');
+                document.getElementById('componentContainer').innerHTML = componentContent;
+            }
+
+            loadConponent('searchComponent');
+        </script>
+    </body>
+</html>
